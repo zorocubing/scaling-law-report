@@ -3,7 +3,8 @@ Documents of my JAX and Scaling Book journey
 
 This repository is a document of my journey in learning the JAX tutorial and Scaling Book. It consists of scanned exercise writeups, video and screen recordings, LaTeX report, Notes that I took, and the code I wrote.
 
-## Recordings
+<details>
+<summary>## Recordings</summary>
 
 ### Ch.1 Rooflines
 
@@ -40,6 +41,7 @@ This repository is a document of my journey in learning the JAX tutorial and Sca
 - [**Q10**](https://youtu.be/Fvr8sKzTd0c)
 
 To be continued...
+</details>
 
 ## Code
 
