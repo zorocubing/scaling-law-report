@@ -53,8 +53,8 @@ To be continued...
 
 ## Code
 
-- [JAX Tutorial Jupyter Notebook](https://github.com/zorocubing/scaling-law-report/blob/master/code/jax%20tutorial.ipynb)
+- [**JAX Tutorial Jupyter Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/code/jax%20tutorial.ipynb)
 
 ## Notes
 
-- [JAX Notebook with Math and Code explanations](https://github.com/zorocubing/scaling-law-report/blob/master/notes/JAX%20Notebook.pdf)
+- [**JAX Notebook with Math and Code explanations**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/JAX%20Notebook.pdf)
