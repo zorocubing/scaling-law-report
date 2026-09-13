@@ -3,6 +3,10 @@ Documents of my JAX and Scaling Book journey
 
 This repository is a document of my journey in learning the JAX tutorial and Scaling Book. It consists of scanned exercise writeups, video and screen recordings, LaTeX report, Notes that I took, and the code I wrote.
 
+## Exercise Writeups and Report
+- [**Scaling Book Exericse Writeups**](https://github.com/zorocubing/scaling-law-report/blob/master/Scaling%20Book%20Exercise%20Writeups.pdf)
+- [**Scaling Law Report**](https://github.com/zorocubing/scaling-law-report/blob/master/Scaling%20Law%20Report.pdf)
+
 ## Recordings
 <details>
 <summary>Click me</summary>
