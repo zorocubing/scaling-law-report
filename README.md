@@ -54,7 +54,7 @@ To be continued...
 ## Code
 
 - [**JAX Tutorial Jupyter Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/code/jax%20tutorial.ipynb)
-
+- [**Scaling Book Code Exercises Jupyter Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/code/scaling%20book%20exercises.ipynb)
 
 To be continued...
 
