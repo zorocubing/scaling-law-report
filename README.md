@@ -1,5 +1,5 @@
-<img width="1784" height="631" alt="Scaling Book Report Repository Banner" src="https://github.com/user-attachments/assets/512d7a18-dc16-4355-bfdb-a9a181782c44" />
 # scaling-law-report
+<img width="1784" height="631" alt="Scaling Book Report Repository Banner" src="https://github.com/user-attachments/assets/512d7a18-dc16-4355-bfdb-a9a181782c44" />
 Documents of my JAX and Scaling Book journey
 
 This repository is a document of my journey in learning the JAX tutorial and Scaling Book. It consists of scanned exercise writeups, video and screen recordings, LaTeX report, Notes that I took, and the code I wrote.
