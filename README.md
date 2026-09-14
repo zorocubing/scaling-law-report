@@ -1,3 +1,4 @@
+<img width="1784" height="631" alt="Scaling Book Report Repository Banner" src="https://github.com/user-attachments/assets/512d7a18-dc16-4355-bfdb-a9a181782c44" />
 # scaling-law-report
 Documents of my JAX and Scaling Book journey
 
