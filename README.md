@@ -8,8 +8,8 @@ This repository is a document of my journey in learning the JAX tutorial and Sca
 
 If the PDF is not viewable, it's because the file is too large for GitHub to render. Please download the PDF and view it locally. 
 
-- [**Scaling Book Exericse Writeups**](https://github.com/zorocubing/scaling-law-report/blob/master/Scaling%20Book%20Exercise%20Writeups.pdf)
-- [**Scaling Law Report**](https://github.com/zorocubing/scaling-law-report/blob/master/Scaling%20Law%20Report.pdf)
+- [**Scaling Book Exericse Writeups**](https://github.com/zorocubing/scaling-law-report/blob/master/prism-uploads/Scaling%20Book%20Exercise%20Writeups.pdf)
+- [**Scaling Law Report**](https://github.com/zorocubing/scaling-law-report/blob/master/prism-uploads/Scaling_Book_Report.pdf)
 
 ## Recordings
 <details>
