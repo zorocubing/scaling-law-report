@@ -136,6 +136,7 @@
         \item Section 1
         \item Section 2
         \item Section 3
+        \item Section 4
       \end{itemize}
   \end{enumerate}
   \end{minipage}
@@ -501,4 +502,97 @@ Total scalars:
 \answer{Approximately $\dfrac{N^2}{8}$ for large $D$.}\\
 \textbf{(6)}\quad Using the approximation in (5), (4):(5) $\approx\dfrac{N^2}{2}:\dfrac{N^2}{8}$; \answer{approximately $4:1$.}\\
 \answer{Factor of 2 comes from the closed-form formula $n(n-1)/2$.}
+
+\newpage
+\pagehead{16 / 9 / 2026}{Section 4}
+\question{Q1.}$L(3DF+4DNH+2D)+2DN$.  With $L=64$, $D=4096$, $F=4(4096)$, $NH=4096$, and $N=32000$,
+\[
+64\bigl(3\cdot4096\cdot4\cdot4096+4\cdot4096\cdot4096+2\cdot4096\bigr)
++2\cdot4096\cdot32000
+\approx1.7\times10^{10}.
+\]
+\answer{Approximately $17\,$B parameters.}\
+
+Attention parameters as a fraction of the MLP plus attention parameters:
+\[
+\frac{4DNH}{3DF+4DNH}
+=\frac{4\cdot4096\cdot4096}
+{3\cdot4096\cdot4\cdot4096+4\cdot4096\cdot4096}
+=0.25=\frac14.
+\]
+KV cache per token: $2LKH=2\cdot64\cdot4096=\answer{524{,}288\ \mathrm{B}}$.
+
+\question{Q2.}Total FLOPs $=2BDF$.  The total actual FLOPs are $2BDFZ$.  The FLOPs per TPU may be obtained either by dividing the total FLOPs by the sharded axes,
+\[
+\frac{2BDF}{XY},
+\]
+or by dividing the total actual FLOPs by all mesh axes:
+\[
+\frac{2BDFZ}{XYZ}=\frac{2BDF}{XY}.
+\]
+
+\question{Q3.}$A[I,J,K,L]\cdot B[I,J,M,N,O]\longrightarrow C[K,L,M,N,O]$.\
+The contracting dimensions are $I$ and $J$, so \answer{the total FLOPs are $2IJKLMNO$.}
+
+\newpage
+\pagehead{21 / 9 / 2026}{Section 4}
+\question{Q4.}Arithmetic intensity is $\dfrac{\text{total FLOPs}}{\text{total bytes}}$.  For attention,
+\[
+\operatorname{Attn}(Q,K,V)=\operatorname{softmax}(QK^\mathsf{T})V.
+\]
+The two matmuls each cost $2HBTSN$ FLOPs, while softmax costs $O(BTSN)$.  Thus
+\[
+\text{total FLOPs}=2HBTSN+2HBTSN+O(BTSN)\approx4HBTSN.
+\]
+The bytes moved are
+\[
+2BTNH+2BSKH+2BSKH+2BTNH
+=4BTNH+4BSKH
+=4BHK(TG+S),
+\]
+where $N=KG$.  Therefore
+\[
+\mathrm{AI}=\frac{4HBTSN}{4BHK(TG+S)}=\frac{TG}{TG+S}.
+\]
+For $T=S$, $\mathrm{AI}=\dfrac{T^2G}{TG+T}=\dfrac{TG}{G+1}=O(T)$.  For $T\ll S$, $\mathrm{AI}=\dfrac{SG}{G+S}\approx\answer{G}$.
+
+\question{Q5.}Equating attention FLOPs with QKVO projection FLOPs gives
+\[
+12BT^2NH=24BTDNH
+\quad\Longrightarrow\quad \answer{T=2D}.
+\]
+
+\question{Q6.}For the $QK^\mathsf{T}$ calculation,
+\[
+\frac{6BTSNH}{3}=2BTSNH=2BT^2NH.
+\]
+The $\operatorname{softmax}(QK^\mathsf{T})V$ calculation also costs $2BT^2NH$ FLOPs.\
+\begin{center}\answer{Total: $4BT^2NH$ FLOPs.}\end{center}
+
+\newpage
+\pagehead{21 / 9 / 2026}{Section 4}
+\question{Q7.}Peak FP8 performance with structured sparsity is $3026$ TFLOPs/s, or $1513$ TFLOPs/s without it:
+\[
+1.513\times10^{15}\ \mathrm{FLOPs/s}.
+\]
+Over $2.79\times10^6$ accelerator-hours,
+\[
+1.513\times10^{15}\cdot2.79\times10^6\cdot60\cdot60
+=1.52\times10^{25}\ \text{total FLOPs}.
+\]
+\[
+\frac{6\cdot37\times10^9\cdot19.5\times10^{12}}{1.52\times10^{25}}
+=\answer{21.6\%}.
+\]
+
+\question{Q8.}TPU arithmetic intensity:
+\[
+\frac{1.97\times10^{14}}{8.2\times10^{11}}\approx240.
+\]
+For $\dfrac{2KBDF}{FDF}>240$,
+\[
+\frac{2KB}{F}>240
+\quad\Longrightarrow\quad B>\frac{120F}{K}.
+\]
+For DeepSeek, $F=256$ and $K=8$, so \answer{$B>\dfrac{120(256)}8=3840$.}
 \end{document}
