@@ -49,6 +49,17 @@ If the PDF is not viewable, it's because the file is too large for GitHub to ren
 - [**Q9**](https://youtu.be/uNbVvFJkSkY)
 - [**Q10**](https://youtu.be/Fvr8sKzTd0c)
 
+### Ch.4 Transformers
+
+- [**Q1**](https://youtu.be/Ux_xmTnGeyU)
+- [**Q2**](https://youtu.be/QPKNXmtXPS0)
+- [**Q3**](https://youtu.be/pNEGxSWP7fg)
+- [**Q4**](https://youtu.be/D0P1RzoszkE)
+- [**Q5**](https://youtu.be/b3Hh-0aSyzo)
+- [**Q6**](https://youtu.be/NsQivXt5UNY)
+- [**Q7**](https://youtu.be/yJd838Nrt8o)
+- [**Q8**](https://youtu.be/1xWCiBxcpCY)
+
 To be continued...
 </details>
 
@@ -62,5 +73,6 @@ To be continued...
 ## Notes
 
 - [**JAX Notebook with Math and Code explanations**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/JAX%20Notebook.pdf)
+- [**Scaling Law Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/Scaling%20Law%20Notebook.pdf)
 
 To be continued...
