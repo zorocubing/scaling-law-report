@@ -75,5 +75,5 @@ If the PDF is not viewable, it's because the file is too large for GitHub to ren
 
 ## Dwarkesh Podcast
 
-- [**Flashcards Exercises**]()
+- [**Flashcards Exercises**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/Podcast%20Notes%20and%20Flashcards%20Exercises.pdf)
 - [**ChatGPT conversation to discuss the lecture**](https://chatgpt.com/share/6ab4ffa3-3664-83ee-8f31-a84e17ac191e)
