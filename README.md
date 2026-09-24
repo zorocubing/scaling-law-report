@@ -60,7 +60,6 @@ If the PDF is not viewable, it's because the file is too large for GitHub to ren
 - [**Q7**](https://youtu.be/yJd838Nrt8o)
 - [**Q8**](https://youtu.be/1xWCiBxcpCY)
 
-To be continued...
 </details>
 
 ## Code
@@ -68,11 +67,13 @@ To be continued...
 - [**JAX Tutorial Jupyter Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/code/jax%20tutorial.ipynb)
 - [**Scaling Book Code Exercises Jupyter Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/code/scaling%20book%20exercises.ipynb)
 
-To be continued...
 
 ## Notes
 
 - [**JAX Notebook with Math and Code explanations**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/JAX%20Notebook.pdf)
 - [**Scaling Law Notebook**](https://github.com/zorocubing/scaling-law-report/blob/master/notes/Scaling%20Law%20Notebook.pdf)
 
-To be continued...
+## Dwarkesh Podcast
+
+- [**Flashcards Exercises**]()
+- [**ChatGPT conversation to discuss the lecture**](https://chatgpt.com/share/6ab4ffa3-3664-83ee-8f31-a84e17ac191e)
