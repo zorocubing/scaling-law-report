@@ -13,7 +13,7 @@ If the PDF is not viewable, it's because the file is too large for GitHub to ren
 
 ## Recordings
 <details>
-<summary>Click me</summary>
+<summary>Click me! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="25"/></summary>
 
 ### Ch.1 Rooflines
 
